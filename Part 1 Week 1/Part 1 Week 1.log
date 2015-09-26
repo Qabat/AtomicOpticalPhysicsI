@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.25)  26 SEP 2015 11:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.25)  26 SEP 2015 11:31
 entering extended mode
 **Part*1*Week*1.tex
 
-("C:\Users\KabaT\Dropbox\Atomic and Optical Physics Course\Part 1 Week 1\Part 1
- Week 1.tex"
+("C:\Users\KabaT\Dropbox\Atomic and Optical Physics Course\AtomicOpticalPhysics
+\Part 1 Week 1\Part 1 Week 1.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -16,8 +16,8 @@ ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
 
-("C:\Users\KabaT\Dropbox\Atomic and Optical Physics Course\Part 1 Week 1\header
-.tex" (C:\MiKTeX\tex\latex\base\article.cls
+("C:\Users\KabaT\Dropbox\Atomic and Optical Physics Course\AtomicOpticalPhysics
+\Part 1 Week 1\header.tex" (C:\MiKTeX\tex\latex\base\article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (C:\MiKTeX\tex\latex\base\size11.clo
 File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
@@ -224,8 +224,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \c@thm=\count113
 \c@dfn=\count114
 )
-("C:\Users\KabaT\Dropbox\Atomic and Optical Physics Course\Part 1 Week 1\Part 1
- Week 1.aux")
+("C:\Users\KabaT\Dropbox\Atomic and Optical Physics Course\AtomicOpticalPhysics
+\Part 1 Week 1\Part 1 Week 1.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
@@ -309,27 +309,28 @@ Package pdftex.def Info: whispering.jpg used on input line 20.
 Non-PDF special ignored!
 
 {C:/Users/KabaT/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Ka
-baT/Dropbox/Atomic and Optical Physics Course/Part 1 Week 1/whispering.jpg>] [2
-]
-("C:\Users\KabaT\Dropbox\Atomic and Optical Physics Course\Part 1 Week 1\Part 1
- Week 1.aux") ) 
+baT/Dropbox/Atomic and Optical Physics Course/AtomicOpticalPhysics/Part 1 Week 
+1/whispering.jpg>] [2]
+("C:\Users\KabaT\Dropbox\Atomic and Optical Physics Course\AtomicOpticalPhysics
+\Part 1 Week 1\Part 1 Week 1.aux") ) 
 Here is how much of TeX's memory you used:
  2738 strings out of 493921
- 34173 string characters out of 3154500
+ 34362 string characters out of 3154500
  100010 words of memory out of 3000000
  6007 multiletter control sequences out of 15000+200000
  10152 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,4n,32p,329b,229s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+<C:/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mbx10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmex10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8
+.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10
+.pfb>
 Output written on "Part 1 Week 1.pdf" (2 pages, 147561 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
