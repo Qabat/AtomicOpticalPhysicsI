@@ -1,0 +1,14 @@
+\input{header.tex}
+\title{MITx: 8.421 Atomic and Optical Physics I}
+\author{Piotr 'Kabat' Kabacinski}
+
+\begin{document}
+\maketitle
+
+Part1: Resonance
+
+\subfile{part1week1}
+
+\newpage
+
+\end{document}

@@ -1,14 +1,14 @@
-\input{header.tex}
-\title{MITx: 8.421.1x Atomic and Optical Physics I part 1: Resonance}
-\author{Piotr Kabacinski}
+\documentclass[AtomicOptical1Notes.tex]{subfiles}
+
 \begin{document}
-\maketitle
+
+\begin{center}\huge Week 1: Classical Resonances\end{center}
 
 \section{Resonances - an overview}
 
 	\subsection{Introduction to resonance}
 				\begin{itemize}
-					\item Classical resonance - any periodic variation of some variable. When you drive a system with a variable frequency, you observe a peak at resonant frequency.
+					\item Resonance - any periodic variation of some variable. When you drive a system with a variable frequency, you observe a peak at resonant frequency.
 					\item Atomic Physics is interested with every single possible aspect of resonance. Resonance is the language physicists talk to atoms with.
 					\item Oscillators are characterized by the sharpness of the resonance (Q - quality factor) which is a ratio of the frequency width of the resonance and its resonant frequency. Q is the number of oscillations that can be observed before the oscillation decays away.
 					\item In Atomic Physics oscillators are characterized by extremely high Q factors
@@ -53,6 +53,24 @@
 \section{Harmonic oscillators and two-level systems}
 	\subsection{Harmonic oscillators vs. two-level systems}
 		\begin{itemize}
-			\item 
+			\item Two-level system is a system with 2 levels. Harmonic oscillator is a system with infinite number of equidistant levels. 
+			\item When some energy is put into the second state of HO, some small energy also goes into every higher level. In two-level system there are no higher levels than second one, so nothing can go higher.
+			\item Quantum system can be described as a harmonic oscillator for weak excitation (when there is small energy in excited state).
+			\item Two-level system can be saturated (harmonic oscillator can never be saturated). When the second energy level is full adding more energy can't go higher. If a two-level system is not saturated, it behaves like a harmonic oscillator so it behaves completely classical.
 		\end{itemize}
+	\subsection{Rotating systems vs. 2-level systems}
+		\begin{itemize}
+			\item Precessing gyroscope has a bound on amplitude. Motion of classical magnetic moments provides a model which captures almost all features of the quantum mechanical two-level system (except for projection, quantum measurement).
+		\end{itemize}
+\section{Classical magnetic moment in a uniform field}
+	\subsection{Magnetic resonance}
+		\begin{itemize}
+			\item Gyromagnetic ratio ($\gamma$) is a ratio between magnetic moment and angular momentum ($\gv{\mu}=\gamma\v{L}$). From that we can find that derivative of angular momentum is given by: $\dot{\v{L}}=\gamma\v{L}\times\v{B}$. Solution of that equation is a pure precession of $\v{L}$ around $\v{B}$. Precession around the $\v{B}$ is happening at the constant tipping angle with an angular frequency called Larmor frequency $\Omega_L=-\gamma B$.
+			
+			\includegraphics{precession}
+			
+			\item For an electron $\gamma_e=2\pi*2.8$MHz/G. For classical charge distribution (of particles with the same charge to mass ratio as electrons) gyromagnetic ratio is a half of that: $\gamma=2\pi*\mu_B$ (where $\mu_B = 1.4$MHz/G and is called Bohr magneton).
+			\item Proton is heavier than the electron ($\frac{m_p}{m_e}=1836.153$) and therefore $\gamma_P=2\pi*4.2$kHz/G.
+		\end{itemize}
+		
 \end{document}
