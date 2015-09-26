@@ -82,7 +82,7 @@
 			\item Precession frequency of a system depends on energy difference of two neighbouring energy levels. 
 		\end{itemize}
 		
-	\subsection{Rotating coordinate tranform for equations of motion of a classical magnetic moment}
+	\subsection{Rotating coordinate transform for equations of motion of a classical magnetic moment}
 		\begin{itemize}
 			\item Going into rotating frame is useful to solve certain problems.
 			\item Rotating vector $\v{A}$ which rotates with a constant angular frequency $\v{\Omega}$ is described by: $\dot{\v{A}}=\v{\Omega}\times\v{A}$.
@@ -96,10 +96,23 @@
 			
 			$ \v{\dot L_{rot}} = \gamma\v{L_{in}}\times(\v{B}+\v{B_{fict}}) $, where $ \v{B_{fict}}=\frac{\v{\Omega}}{\gamma} $.
 			\item If we choose the rotating frequency to be Larmor frequency $\v{\Omega} = \v{\Omega_L} = -\gamma\v{B}$ then our effective magnetic field $ \v{B_{eff}} = \v{B}+\v{B_{fict}} = 0 $ and because in that situation there is no magnetic field, we know that angular momentum $\v{L}$ is constant in the rotating frame. To get the knowledge what happens in the real frame the answer has to be 'rotated back'.
+			\item For classical charge distribution (of electrons) forming magnetic moment, Larmor frequency at which magnetic moment of the distribution is precessing is: $\Omega_L = \frac{e}{2m}B$. Frequency of the cyclotron motion for free electron in a magnetic field is twice that: $\Omega_{cyclotron} = \frac{e}{m}B$.
 		\end{itemize}
 	
-	\subsection{Another factor of two and the electron cyclotron frequency}
+	\subsection{Rotating magnetic field on resonance}
 		\begin{itemize}
-			\item For classical charge distribution (of electrons) forming magnetic moment, Larmor frequency at which magnetic moment of the distribution is precessing is: $\Omega_L = \frac{e}{2m}B$. Frequency of the cyclotron motion for free electron in a magnetic field is twice that: $\Omega_{cyclotron} = \frac{e}{m}B$.
+			\item We put a magnetic moment in a time-dependent field: $ \v{B}(t) = B_1(\hat{e_x}cos\Omega_L t - \hat{e_y}sin\Omega_L t) + B_0\hat{e_z} $
+			
+			\includegraphics{rotatingBfield}
+			
+			\item In the frame rotating with Larmor frequency we have: $ \v{B_{eff}}(t) = \v{B}(t) - \frac{\Omega_L}{\gamma}\hat{e_z} = B_1\hat{e_{x'}} $, where $ \hat{e_{x'}} = \hat{e_x}cos(\Omega_L t) - \hat{e_y}sin(\Omega_L t) $. Therefore in the rotating frame we have a static field of value $ B_1 $, and we know that in the static magnetic field magnetic moment is just precessing around the field vector with the Rabi frequency $ \omega_R = \gamma B_1 $.
+			\item If we start with the magnetic moment aligned with the z-axis (at $t=0$ $\v{\mu}=\mu\hat{e_z}$), after half a Rabi cycle the magnetic moment will be inverted (at $t=\frac{\pi}{\omega_R}$ $\v{\mu}=-\mu\hat{e_z}$). This is called $\pi$ pulse, because it rotates a spin by $\pi$ or we can call it a 'spin flip'.
+			\item For the off-resonant case, the field in the z direction will not be canceled and the resulting field $\v{B_{eff}}$ is a sum of the field in the z direction and the rotating field. The magnetic moment precesses at generalized Rabi frequency: $ \Omega_R = \gamma B_{eff} = \sqrt{\omega_R^2+(\omega_L-\omega)^2} = \sqrt{\omega_R^2} $. Therefore the generalized Rabi frequency is the resonant Rabi frequency added in quadrature with the detuning from resonance. When the rotating field is at frequency lower or higher than the Larmor frequency, oscillation frequency of the magnetic moment will be larger than the resonant Rabi frequency. Driving the system off-resonance, the spin will never fully invert.
+			\item Classical magnetic moment time dependence while in a magnetic field rotating at the generalized Rabi frequency: $ \mu_z(t) = \mu \left( 1 - 2 \frac{\omega_R^2}{\Omega_R^2} \sin^2 \frac{\Omega_R t}{2} \right) $. This result is correct in quantum-mechanical treatment and the spin flip probability is: $ P= \frac{\omega_R^2}{\Omega_R^2} \sin^2 \frac{\Omega_R t}{2} $.
+		\end{itemize}
+		
+	\subsection{Rapid adiabatic passage}
+		\begin{itemize}
+			\item 
 		\end{itemize}
 \end{document}
