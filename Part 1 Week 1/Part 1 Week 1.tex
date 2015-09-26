@@ -1,0 +1,42 @@
+\input{header.tex}
+\title{MITx: 8.421.1x Atomic and Optical Physics I part 1: Resonance}
+\author{Piotr Kabacinski}
+\begin{document}
+\maketitle
+
+\section{Resonances - an overview}
+
+	\subsection{Introduction to resonance}
+				\begin{itemize}
+					\item Classical resonance - any periodic variation of some variable. When you drive a system with a variable frequency, you observe a peak at resonant frequency.
+					\item Atomic Physics is interested with every single possible aspect of resonance. Resonance is the language physicists talk to atoms with.
+					\item Oscillators are characterized by the sharpness of the resonance (Q - quality factor) which is a ratio of the frequency width of the resonance and its resonant frequency. Q is the number of oscillations that can be observed before the oscillation decays away.
+					\item In Atomic Physics oscillators are characterized by extremely high Q factors
+						\begin{itemize}
+							\item optical oscillators: $10^{15}$ Hz (light frequency) $\Rightarrow$ $Q = 10^6$	(with doppler broadening), $Q = 10^{15}$ (without doppler broadening, eg. atom in optical lattice in metastable levels)
+							\item mechanical oscillators: eg. quartz $Q = 10^4$ - $10^6$
+							\item micromechanical oscillators: $Q = 10^5$ (eg. whispering gallery mode can have $Q = 10^9$, where light circulates around the circle of the mushroom-like structure)
+							
+							\includegraphics{whispering}
+							
+							\item astronomical oscillators: earth rotation: $Q = 10^7$, neutron star: $Q = 10^{10}$
+						\end{itemize}
+					\item "Useful" resonances are reproducible and connected by theory to fundamental constants.
+					\item Rydberg constant ($R = 1.097... * 10^7 m^{-1}$) is the most accurately known constant in physics because it can be directly measured by performing spectroscopy experiments with hydrogen. Measuring fundamental constants more accurately is very important in understanding the world.
+					\item Typical resonance lineshape is lorentzian which is proportional to Im$\left(\frac{1}{\omega_0-\omega+i*\frac{\gamma}{2}}\right)$. For lorentzian: $\gamma = $FWHM and $Q = \frac{\omega_0}{\gamma}$.
+				\end{itemize}
+				
+	\subsection{Angular frequency units}
+		\begin{itemize}
+			\item All parameters should be measured in angular frequency units which are technically $\frac{rad}{s}$, sometimes we use $s^{-1}$. Frequencies (not angular) are measured in Hz.
+			\item Good manner is to write angular frequency as $\omega_0 = 2\pi*1\text{MHz} = 6.28 * 10^6 s^{-1}$, \emph{NEVER} $6.28 * 10^{6}$ Hz.
+			\item Units for $\gamma$ (temporal decay rate, inverse of dumping time) are $s^{-1}$ (\emph{NOT} Hz).
+		\end{itemize}
+		
+\section{Resonance widths and uncertainty relations}
+	\subsection{How precisely can you measure frequencies?}
+		\begin{itemize}
+			\item Some of the most accurate experiments in physics are done by measuring frequency.
+			\item For oscillator oscillating for time $\Delta t$ with finite width of frequency spectrum $\Delta\omega$: $\Delta\omega\Delta t \geq \frac{1}{2}$
+		\end{itemize}
+\end{document}
