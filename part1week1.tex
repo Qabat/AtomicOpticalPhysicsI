@@ -34,16 +34,19 @@
 		\end{itemize}
 		
 \section{Resonance widths and uncertainty relations}
+
 	\subsection{How precisely can you measure frequencies?}
 		\begin{itemize}
 			\item Some of the most accurate experiments in physics are done by measuring frequency.
 			\item For oscillator oscillating for time $\Delta t$ with finite width of frequency spectrum $\Delta\omega$: $\Delta\omega\Delta t \geq \frac{1}{2}$
 		\end{itemize}
+		
 	\subsection{Heisenberg limits on quantum and classical systems}
 		\begin{itemize}
 			\item Heisenberg uncertainty relation is about single measurement on a single quantum system. To increase accuracy of the measurement it can be repeated many times or can be done on a system with many photons.
 			\item Using nonlinear process it can be achieved for a single quantum system and a single photon utilizing many energy levels at the same time and jumping many levels at the same time. Precision of such an experiment is better by $\frac{1}{n}$ times, where $n$ is the number of energy levels.
 		\end{itemize}
+		
 	\subsection{Frequency measurement example: atomic clocks}
 		\begin{itemize}
 			\item Cesium atom fountain clock, $\omega=2\pi*10$GHz, interrogation time $\Delta t=1$s has fractional linewidth $\frac{\Delta\omega}{\omega}=10^{-11}$. Accuracy of the best cesium fountains is now $10^{-16}$.
@@ -51,6 +54,7 @@
 		\end{itemize}
 		
 \section{Harmonic oscillators and two-level systems}
+
 	\subsection{Harmonic oscillators vs. two-level systems}
 		\begin{itemize}
 			\item Two-level system is a system with 2 levels. Harmonic oscillator is a system with infinite number of equidistant levels. 
@@ -58,19 +62,44 @@
 			\item Quantum system can be described as a harmonic oscillator for weak excitation (when there is small energy in excited state).
 			\item Two-level system can be saturated (harmonic oscillator can never be saturated). When the second energy level is full adding more energy can't go higher. If a two-level system is not saturated, it behaves like a harmonic oscillator so it behaves completely classical.
 		\end{itemize}
+		
 	\subsection{Rotating systems vs. 2-level systems}
 		\begin{itemize}
 			\item Precessing gyroscope has a bound on amplitude. Motion of classical magnetic moments provides a model which captures almost all features of the quantum mechanical two-level system (except for projection, quantum measurement).
 		\end{itemize}
+		
 \section{Classical magnetic moment in a uniform field}
+
 	\subsection{Magnetic resonance}
 		\begin{itemize}
-			\item Gyromagnetic ratio ($\gamma$) is a ratio between magnetic moment and angular momentum ($\gv{\mu}=\gamma\v{L}$). From that we can find that derivative of angular momentum is given by: $\dot{\v{L}}=\gamma\v{L}\times\v{B}$. Solution of that equation is a pure precession of $\v{L}$ around $\v{B}$. Precession around the $\v{B}$ is happening at the constant tipping angle with an angular frequency called Larmor frequency $\Omega_L=-\gamma B$.
+			\item Gyromagnetic ratio ($\gamma$) is a ratio between magnetic moment and angular momentum ($\gv{\mu}=\gamma\v{L}$). From that we can find that derivative of angular momentum is given by: ${\v{\dot{L}}}=\gamma\v{L}\times\v{B}$. Solution of that equation is a pure precession of $\v{L}$ around $\v{B}$. Precession around the $\v{B}$ is happening at the constant tipping angle with an angular frequency called Larmor frequency $\Omega_L=-\gamma B$.
 			
 			\includegraphics{precession}
 			
 			\item For an electron $\gamma_e=2\pi*2.8$MHz/G. For classical charge distribution (of particles with the same charge to mass ratio as electrons) gyromagnetic ratio is a half of that: $\gamma=2\pi*\mu_B$ (where $\mu_B = 1.4$MHz/G and is called Bohr magneton).
 			\item Proton is heavier than the electron ($\frac{m_p}{m_e}=1836.153$) and therefore $\gamma_P=2\pi*4.2$kHz/G.
+			\item The magnetic moment of the electron is 1 Bohr magneton.
+			\item Precession frequency of a system depends on energy difference of two neighbouring energy levels. 
 		\end{itemize}
 		
+	\subsection{Rotating coordinate tranform for equations of motion of a classical magnetic moment}
+		\begin{itemize}
+			\item Going into rotating frame is useful to solve certain problems.
+			\item Rotating vector $\v{A}$ which rotates with a constant angular frequency $\v{\Omega}$ is described by: $\dot{\v{A}}=\v{\Omega}\times\v{A}$.
+			\item When we view the system in a coordinate system rotating at $\v{\Omega}$ then derivatives of the vector $\v{A}$ in rotating and inertial frames are related by: $ \v{\dot A_{in}} = \v{\dot A_{rot}} + \v{\Omega}\times\v{A_{in}} $. From that follow two special cases: 
+				\begin{itemize}
+					\item If $\v{A}$ is constant in the rotating system then: $ \v{\dot A_{in}} = \v{\Omega}\times\v{A_{in}} $.
+					\item If rotating frame is not rotating ($\v{\Omega} = 0$) then: $ \v{\dot A_{in}} = \v{\dot A_{rot}} $.
+				\end{itemize}
+			\item From above there can be derived an operator equation for transforming a vector from inertial to rotating frame: $\left(\frac{d}{dt}\right)_\text{rot} = \left(\frac{d}{dt}\right)_\text{in} - {\bf{\Omega}} \times\big(\big)_\text{in}$.
+			\item We can apply this operator equation to angular momentum vector $\v{L}$ and we get:
+			
+			$ \v{\dot L_{rot}} = \gamma\v{L_{in}}\times(\v{B}+\v{B_{fict}}) $, where $ \v{B_{fict}}=\frac{\v{\Omega}}{\gamma} $.
+			\item If we choose the rotating frequency to be Larmor frequency $\v{\Omega} = \v{\Omega_L} = -\gamma\v{B}$ then our effective magnetic field $ \v{B_{eff}} = \v{B}+\v{B_{fict}} = 0 $ and because in that situation there is no magnetic field, we know that angular momentum $\v{L}$ is constant in the rotating frame. To get the knowledge what happens in the real frame the answer has to be 'rotated back'.
+		\end{itemize}
+	
+	\subsection{Another factor of two and the electron cyclotron frequency}
+		\begin{itemize}
+			\item For classical charge distribution (of electrons) forming magnetic moment, Larmor frequency at which magnetic moment of the distribution is precessing is: $\Omega_L = \frac{e}{2m}B$. Frequency of the cyclotron motion for free electron in a magnetic field is twice that: $\Omega_{cyclotron} = \frac{e}{m}B$.
+		\end{itemize}
 \end{document}
