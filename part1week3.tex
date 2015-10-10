@@ -4,4 +4,39 @@
 
 \begin{center}\huge Week 3: Resonance and Decoherence Processes\end{center}
 
+\section{Resonance in a QM System: Density Matrix Formalism}
+	
+	\subsection{Density matrices - review}
+		\begin{itemize}
+			\item We cannot describe processes like decoherence or loss of particles with Shroedinger equation as it deals only with pure states. The exception is when you have two states and all what happens is a loss to some other levels. Then Hamiltonian description can be used but eigenvalues have to be replaced by complex numbers. For processes like spontaneous emission density matrix approach have to be used.
+			\item If we have a time dependent wave function: $$ \ket{\Psi(t)}= \sum_{n} c_n(t) \ket{\Psi_n} $$ then we can define arbitrary operators by matrices: $ A_{nm}=\bra{\Psi_n}\hat{A}\ket{\Psi_m} $. Expectation value of the operator is: $$ \avg{\hat{A}}_t=\bra{\Psi(t)}\hat{A}\ket{\Psi(t)}= \sum_{m,n} {c^*}_m(t)c_n(t) A_{nm} = \sum_{m,n} \rho_{nm}(t)A_{nm} = Tr(\hat{\rho}(t)\hat{A}) $$ with $ \hat{\rho}(t)=\ket{\Psi(t)}\bra{\Psi(t)} $ and the matrix element given by: $ \rho_{nm}=c_m^*(t)c_n(t) $. The diagonal matrix elements $ \rho_{nn} $ are called the populations and the off-diagonal matrix elements $ \rho_{mn} $ are called coherences.
+			
+			When we include the probabilites of being in a certain state to the density matrix description we get: $$ \hat{\rho}(t)=\sum_{i}P_i\ket{\Psi(t)}\bra{\Psi(t)} $$ $$ \avg{\hat{A}}_t = Tr(\hat{\rho}(t)\hat{A}) $$ and we have two averages here; one is quantum mechanical expectation value and the other one is ensemble average with probability $ P_i $.
+			\item Using the Shroedinger equation we can derive an equation for density matrix: $$ i\hbar\dot{\hat{\rho}} = [\hat{H},\hat{\rho}] $$.
+			\item Properties of the density matrix: $$ Tr(\hat{\rho})=\sum_{i} P_i = 1 $$ $$ Tr(\hat{\rho}^2)=\sum_{i} P_i^2 \leq 1, $$ for pure states: $$ Tr(\hat{\rho}^2)=\sum_{i} P_i^2 = 1. $$ Density matrix operator is hermitian.
+			\item We want to use the density matrix for non-unitary time evolution. This is often the situation for smaller system that is open for a bigger system, where we limit our description to a small part of a larger system.
+		\end{itemize}
+		
+	\subsection{Density matrices formalism for arbitrary two-level systems}
+		\begin{itemize}
+			\item The most general Hamiltonian for the most general two-level system can be constructed from Pauli matrices and the identity matrix. By appropriately shifting the zero-point energy we can use only Pauli matrices and we get: $$ \hat{H} = \frac{\hbar}{2} ( \omega_1\hat{\sigma}_x + \omega_2\hat{\sigma}_y + \omega_3\hat{\sigma}_z) = \frac{\hbar}{2} \gv{\omega} \cdot \gv{\hat{\sigma}} $$
+			\item We describe two-level systems by density matrice which is also 2x2 matrix. The most general density matrix can also be expanded into those basic matrices. This time we can't throw away identity matrix because then there would be no trace and therefore no probability to find the particle. $$ \hat{\rho} = \frac{1}{2} ( r_0\hat{\mathbb{I}} + r_1\hat{\sigma}_x + r_2\hat{\sigma}_y + r_3\hat{\sigma}_z) = \frac{1}{2} (\hat{\mathbb{I}} + \v{r} \cdot \gv{\hat{\sigma}}), $$ because $ Tr(\hat{\rho})=r_0=1 $. Vector $ \v{r} $ is called the Bloch vector.
+			\item We can insert those above formulas into the equation of motion to get: $$ \dot{\v{r}} = \gv{\omega}\times\v{r} $$ This equation tells us that an arbitrary two-level system with an arbitrary Hamiltonian can be regarded as a system where we have a vector $\v{r}$ which undergoes precession.
+			\item Pure state will state pure forever, because: $ Tr(\hat{\rho}^2)=\frac{1}{2}[r_0^2+|\v{r}|^2]=const $. This is because $r_0=1$ and from the equation of motion we get that the length of the vector is not changing. This does not describe loss of coherence (decoherence).
+		\end{itemize}
+	
+\section{Relaxation and the Bloch Equations}
+
+	\subsection{Relaxation - the Bloch equations}
+		\begin{itemize}
+			\item Everything has to come to thermal equilibrium if we will wait for ever. So after long time the density matrix will thermalize to: $ \hat{\rho}^T=\frac{1}{Z}e^{-H_0/kT} $ where $Z$ is a partition function. No matter with what density matrix we start there will be some relaxation process which will restore $\hat{\rho}$ to the thermal equilibrium $\hat{\rho}=\hat{\rho}^T$.
+			\item We can add damping in a phenomenological way by adding a term which will damp the density matrix to the thermal equilibrium density matrix with equilibration time $T_e$: $$ \hat{\rho}=\frac{1}{i\hbar}[\hat{H},\hat{\rho}] - " \frac{\hat{\rho}-\hat{\rho}^T}{T_e}, "$$ the added relaxation term will have no influence on the density matrix when it is in equilibrium.
+			\item In many cases there are TWO relaxation times $T_1$ and $T_2$. $T_1$ is a damping time for population differences (described by $r_3$ component of the Bloch vector), it is the energy decay time. The off-diagonal components $r_1$ and $r_2$ correspond to coherences and they are only non-zero if you have two states populated with a well-defined relative phases. When the quantum mechanical system looses its memory of the phase, $r_1$ and $r_2$ components go to zero. Therefore the time $T_2$ is a time that describes the loss of coherence, the dephasing time. In general $T_2 < T_1$ (often by a lot).
+			\item Using the times $T_1$ and $T_2$ we can now write the Bloch equations in a proper way: $$ \dot{r}_z = (\gv{\omega}\times\v{r})_z - \frac{r_z-r_z^T}{T_1} $$  $$ \dot{r}_{x,y} = (\gv{\omega}\times\v{r})_{x,y} - \frac{r_{x,y}-r_{x,y}^T}{T_2} $$
+			\item The addition of phenomenological decay times does not generalize the density matrix enough to cover situations where atoms (possibly state-selected) are added or lost to a system. This situation can be covered by the addition of further terms to $\dot{\rho}$. Thus a calculation on a resonance experiment in which state-selected atoms are added to a two-level system through a tube which also permits atoms to leave (e.g. a hydrogen maser) might look like: $$ \begin{aligned}  \dot{\rho} &= \frac{1}{i\hbar} [H, \rho] - \begin{pmatrix} (\rho_{11} - \rho_{11T})/T_1 & \rho_{12}/T_2 \\ \rho_{21}/T_2 & (\rho_{22}- \rho_{22T})/T_1 \end{pmatrix} +R \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} - \rho /T_{\rm escape} - \rho /T_{\rm collision} \end{aligned} $$ where $R$ is the rate of addition of state-selected atoms. The last two terms express effects of atom escape from the system and of collisions (e.g. spin exchange) that can't easily be incorporated in $T_1$ and $T_2$.
+
+The terms representing addition or loss of atoms will not have zero trace, and consequently will not maintain $Tr(\hat{\rho})=1$. Physically this is reasonable for systems which gain or lose atoms; the application of the density matrix to this case shows its power to deal with complicated situations. In most applications of the above equation, one looks for a steady state solution (with $\dot{\rho}=0$), so this does not cause problems.
+			\item Every process which contributes to $T_1$ will also contribute to $T_2$ but there are lots of processes which only contribute to $T_2$. Therefore in general $T_2$ is much faster because many more process contribute to it. $T_1$ is the time to damp population and that is a damping of $|\Psi|^2$. $T_2$ is due to the damping of the phase and this is more of a time of the wavefuction itself ($\Psi$). So if the only process that is happening is eg. spontaneous emission $T_1$ can be faster than $T_2$ (when it is defined as above). With our definition of $T_1$ and $T_2$ more proper way of comparing the times is: $\frac{T_2}{2} \leq T_1$.
+		\end{itemize}
+
 \end{document}
